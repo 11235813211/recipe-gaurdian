@@ -1,0 +1,39 @@
+@import url("styles.css");
+
+main {
+    flex-grow: 1;
+}
+
+.title-group {
+    justify-content: left;
+}
+
+.body-header {
+    width: 100vw;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* LIST OF RECIPES */
+.container-list-recipes {
+    margin: 40px 20vw;
+    padding: 0px;
+
+    background-color: rgba(255, 255, 255, 0.204);
+    border-radius: 20px;
+}
+
+.list-recipes {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.list-recipes li {
+    margin: 20px;
+}
+.list-recipes p {
+    margin: 0px;
+    padding: 10px 50px;
+}
+
+/* spacer */

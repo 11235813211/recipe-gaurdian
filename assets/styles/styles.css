@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Limelight&display=swap');
+
+:root {
+    --lavendar-light: rgb(199, 189, 204);
+    --lavendar: rgb(179, 166, 185);
+    --lavendar-dark: rgb(146, 128, 154);
+    --dark-purple: rgb(21, 0, 31);
+    --main-purple: rgb(56, 31, 91);
+}
+
+/* BODY & OVERVIEW */
+/* ///////////////////////////////////////////////////////////////////// */
+html, body {
+    margin: 0;
+    /* background-color: var(--lavendar); */
+    background-image: linear-gradient(var(--lavendar-light), var(--lavendar-dark)), url("../images/TrianglesBackground.png");
+    background-repeat: repeat;   
+    background-position: center;               
+    background-size: 700px;   
+    background-blend-mode: multiply;   
+
+    color: var(--dark-purple);
+    font-family: "Bodoni Moda";
+    font-size: 28px;
+    font-weight: 600;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    color: inherit;           /* Inherit color from parent */
+    text-decoration: none;    /* Remove underline */
+  }
+  
+a:visited {
+    color: var(--dark-purple);           /* Prevent purple visited link */
+}
+
+
+/* HEADER AND NAVIGATION */
+/* //////////////////////////////////////////////////////////////////// */
+nav {
+    margin: 0;
+    padding: 0;
+    border-bottom: 5px solid var(--dark-purple);
+    border-top: 5px solid var(--dark-purple);
+}
+
+.title {
+    font-family: "Limelight";
+    display: flex;
+    margin: 0;
+    padding: 50px;
+    background-color: rgb(56, 31, 91);
+
+    color: var(--lavendar);
+}
+.title-top {
+    font-size: 50px;
+}
+.title-home {
+    justify-content: center;
+}
+
+/* BODY */
+/* /////////////////////////////////////////////////////////////////////// */
+
+/* Page Links */
+.container-page-links {
+    display: flex;
+    justify-content: center;
+}
+
+.page-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.page-links li {
+    display: flex;
+    margin: 20px;
+}
+
+.container-food-descr {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    width: calc(100px + 20vw);
+    border-radius: 20px;
+}
+.container-food-descr:hover {
+    background-color: rgba(255, 255, 255, 0.136);
+}
+
+.page-links a {
+    font-size: 50px;
+    width: auto;
+    border-bottom: 1px solid var(--dark-purple);
+}
+.right-align {
+    text-align: right;
+}
+.page-links a:hover {
+    /* color: rgb(112, 33, 149); */
+    font-weight: 700;
+}
+
+/* images */
+.crop-container {
+    margin: 0px 45px;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 3px solid var(--dark-purple);
+}
+.img-food-showcase {
+    height: 300px;
+}
+
+/* FOOTER */
+/* ////////////////////////////////////////////////////////////////////////  */
+.title-footer {
+    font-size: 20px;
+    height: 100px;
+    align-items: center;
+    border-top: 5px solid var(--dark-purple);
+    border-bottom: 5px solid var(--dark-purple);
+    justify-content: center;
+}
