@@ -1,5 +1,9 @@
 @import url("styles.css");
 
+:root {
+    --white-background: rgba(255, 255, 255, 0.204);
+}
+
 main {
     flex-grow: 1;
 }
@@ -19,7 +23,7 @@ main {
     margin: 40px 20vw;
     padding: 0px;
 
-    background-color: rgba(255, 255, 255, 0.204);
+    background-color: var(--white-background);
     border-radius: 20px;
 }
 
@@ -31,9 +35,41 @@ main {
 .list-recipes li {
     margin: 20px;
 }
-.list-recipes p {
+.list-recipes h3 {
     margin: 0px;
     padding: 10px 50px;
 }
 
-/* spacer */
+/* RECIPE STUFF */
+.container-recipe {
+    width: 70vw;
+    margin: 40px auto;
+    padding: 40px;
+
+    background-color: var(--white-background);
+    border-radius: 20px;
+}
+
+.container-recipe h2 {
+    margin: 0px 0px 20px 0px;
+}
+
+.container-recipe h3 {
+    margin: 30px 0px 0px 0px;
+}
+
+.list-recipe-ingred {
+    margin: 5px 0px;
+}
+
+.list-recipe-ingred li {
+    margin: 5px 0px;
+}
+.list-recipe-ingred p {
+    margin: 0px;
+}
+
+.recipe-descrip {
+    margin: 15px 10px;
+}
+

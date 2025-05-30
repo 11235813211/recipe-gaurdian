@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Forum&family=Limelight&display=swap');
 
 :root {
     --lavendar-light: rgb(199, 189, 204);
@@ -43,6 +44,10 @@ a:visited {
     color: var(--dark-purple);           /* Prevent purple visited link */
 }
 
+p {
+    font-family: "Forum";
+    font-size: 30px;
+}
 
 /* HEADER AND NAVIGATION */
 /* //////////////////////////////////////////////////////////////////// */

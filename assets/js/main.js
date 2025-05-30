@@ -84,7 +84,7 @@ function fillRecipeTitles(titles, foldername, directories) {
 
     titles.forEach((text, i) => {
         const li = document.createElement('li');
-        const p = document.createElement('p');     
+        const p = document.createElement('h3');     
         p.textContent = text;  
         if (titles.length != i +1) {
             p.style.borderBottom = "1px solid var(--dark-purple)"; 
@@ -181,13 +181,23 @@ async function fillRecipes() {
     h3_instructs.innerHTML = "Instructions:";
     divElement.appendChild(h3_instructs);
 
-    const descrips = [];
+    let descrips = [];
+    let li_descripts = [];
+    const ol = document.createElement('ol');
+
     content.instructions.forEach((descrip, i) => {
         descrips.push(document.createElement('p'));
+        li_descripts.push(document.createElement('li'));
+        
         descrips[i].innerHTML = descrip;
         descrips[i].classList.add("recipe-descrip");
-        divElement.appendChild(descrips[i]);
+
+        li_descripts[i].appendChild(descrips[i]); // <-- fixed this line
+        ol.appendChild(li_descripts[i]);
     });
+
+    divElement.appendChild(ol);
+
 }
 
 window.onload = fillRecipeList;
